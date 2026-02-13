@@ -1,0 +1,44 @@
+utility:
+  - title: Directory
+    url: /artists/
+  - title: Press
+    url: /archive/
+  - title: Contact
+    url: /contact/
+  - title: Support
+    url: /donate/
+  - title: Login
+    url: "#"
+primary:
+  - title: Home
+    url: /
+  - title: What We Do
+    url: /what-we-do/
+  - title: Artists
+    url: /artists/
+  - title: Events
+    url: /events/
+  - title: Join
+    url: /join/
+  - title: Donate
+    url: /donate/
+  - title: Archive
+    url: /archive/
+left_directory:
+  - title: Orientation Desk
+    url: /
+  - title: Membership Intake
+    url: /join/
+  - title: Programming Calendar
+    url: /events/
+  - title: Donor Relations
+    url: /donate/
+committee_shortcuts:
+  - title: Legislative
+    anchor: "#committee-legislative"
+  - title: Creative
+    anchor: "#committee-creative"
+  - title: Release
+    anchor: "#committee-release"
+  - title: Outreach & Growth
+    anchor: "#committee-outreach"

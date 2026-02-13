@@ -1,0 +1,24 @@
+- committee: Legislative
+  role: Policy Drafter
+  short_description: Drafts bylaws for humane and absurd workflows.
+  time_level: 3 hrs/week
+- committee: Legislative
+  role: Meeting Scribe
+  short_description: Records decisions and flags contradictions.
+  time_level: 2 hrs/week
+- committee: Creative
+  role: Program Architect
+  short_description: Shapes project briefs with participating artists.
+  time_level: 4 hrs/week
+- committee: Creative
+  role: Studio Support
+  short_description: Coordinates tools, materials, and setup windows.
+  time_level: 3 hrs/week
+- committee: Release
+  role: Distribution Lead
+  short_description: Manages publication, uploads, and tape duplication.
+  time_level: 3 hrs/week
+- committee: Outreach & Growth
+  role: Community Liaison
+  short_description: Runs partner check-ins and welcome sessions.
+  time_level: 2 hrs/week

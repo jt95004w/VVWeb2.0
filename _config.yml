@@ -1,0 +1,29 @@
+title: Vivid Vision Collective
+email: contact@vividvisioncollective.example
+description: >-
+  Corporate portal for Vivid Vision Collective — an arts organization with procedural flair.
+baseurl: ""
+url: ""
+markdown: kramdown
+theme: null
+plugins:
+  - jekyll-feed
+permalink: pretty
+collections:
+  artists:
+    output: true
+    permalink: /artists/:name/
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: artists
+    values:
+      layout: artist
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

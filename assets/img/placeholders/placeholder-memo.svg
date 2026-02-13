@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 330" role="img" aria-label="Scanned memo placeholder">
+  <rect width="260" height="330" fill="#f4f2e9"/>
+  <rect x="10" y="10" width="240" height="310" fill="#f7f5ef" stroke="#666" stroke-width="2"/>
+  <text x="28" y="36" font-family="Tahoma,Verdana,Arial,sans-serif" font-size="14" fill="#333">INTERNAL MEMO</text>
+  <g stroke="#8a8a8a" stroke-width="1">
+    <line x1="28" y1="58" x2="232" y2="58"/>
+    <line x1="28" y1="82" x2="232" y2="82"/>
+    <line x1="28" y1="106" x2="232" y2="106"/>
+    <line x1="28" y1="130" x2="232" y2="130"/>
+    <line x1="28" y1="154" x2="232" y2="154"/>
+    <line x1="28" y1="178" x2="232" y2="178"/>
+    <line x1="28" y1="202" x2="232" y2="202"/>
+    <line x1="28" y1="226" x2="232" y2="226"/>
+    <line x1="28" y1="250" x2="232" y2="250"/>
+    <line x1="28" y1="274" x2="232" y2="274"/>
+  </g>
+</svg>
