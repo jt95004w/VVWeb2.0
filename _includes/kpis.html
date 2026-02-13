@@ -1,0 +1,8 @@
+{% capture k_body %}
+<ul class="kpi-list">
+  {% for kpi in site.data.kpis %}
+    <li><span>{{ kpi.label }}</span><strong>{{ kpi.value }}</strong></li>
+  {% endfor %}
+</ul>
+{% endcapture %}
+{% include module.html title="KPIs" body=k_body class="kpi-module" %}

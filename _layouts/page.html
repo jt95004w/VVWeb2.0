@@ -1,0 +1,8 @@
+---
+layout: default
+---
+{% capture body %}
+  {% if page.lead %}<p class="lead">{{ page.lead }}</p>{% endif %}
+  {{ content }}
+{% endcapture %}
+{% include module.html title=page.title body=body class=page.module_class %}

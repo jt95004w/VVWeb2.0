@@ -1,0 +1,18 @@
+{% capture dir_body %}
+<form class="directory-search" role="search">
+  <label for="quick-search">Search index</label>
+  <input id="quick-search" type="search" placeholder="name, role, file code" />
+</form>
+<ul class="mini-list">
+  {% for item in site.data.nav.left_directory %}
+    <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+  {% endfor %}
+</ul>
+<h3>Committee Shortcuts</h3>
+<ul class="mini-list">
+  {% for item in site.data.nav.committee_shortcuts %}
+    <li><a href="{{ '/join/' | relative_url }}{{ item.anchor }}">{{ item.title }}</a></li>
+  {% endfor %}
+</ul>
+{% endcapture %}
+{% include module.html title="Directory Console" body=dir_body class="directory-module" %}
