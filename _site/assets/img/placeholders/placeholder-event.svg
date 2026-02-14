@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" role="img" aria-label="Photocopied event flyer placeholder">
+  <rect width="420" height="280" fill="#efede4"/>
+  <rect x="16" y="16" width="388" height="248" fill="#f3f1ea" stroke="#555" stroke-width="3"/>
+  <text x="40" y="40" font-family="Tahoma,Verdana,Arial,sans-serif" font-size="16" fill="#343434">FIELD NOTICE</text>
+  <g stroke="#7a7a7a" stroke-width="2">
+    <line x1="40" y1="66" x2="380" y2="66"/>
+    <line x1="40" y1="96" x2="380" y2="96"/>
+    <line x1="40" y1="126" x2="380" y2="126"/>
+    <line x1="40" y1="156" x2="380" y2="156"/>
+    <line x1="40" y1="186" x2="380" y2="186"/>
+    <line x1="40" y1="216" x2="380" y2="216"/>
+  </g>
+</svg>
