@@ -26,4 +26,26 @@
       summary.parentElement.classList.toggle('open');
     });
   });
+
+  var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var parallaxNodes = Array.prototype.slice.call(document.querySelectorAll('.parallax-node'));
+  if (!prefersReducedMotion && parallaxNodes.length) {
+    var ticking = false;
+    var updateParallax = function () {
+      var y = window.scrollY || window.pageYOffset || 0;
+      parallaxNodes.forEach(function (el) {
+        var speed = parseFloat(el.getAttribute('data-speed') || '0');
+        var offset = Math.max(-40, Math.min(40, y * speed));
+        el.style.transform = 'translate3d(0,' + offset.toFixed(1) + 'px,0)';
+      });
+      ticking = false;
+    };
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        window.requestAnimationFrame(updateParallax);
+        ticking = true;
+      }
+    }, { passive: true });
+    updateParallax();
+  }
 })();
