@@ -1,0 +1,24 @@
+- name: Miro Vale
+  slug: miro-vale
+  location: Oakland, CA
+  tags: [sound, installation]
+  image: /assets/img/placeholders/placeholder-artist.svg
+  short_bio: "Builds participatory sound structures from obsolete office hardware."
+  links:
+    site: "#"
+- name: Keiko Dawn
+  slug: keiko-dawn
+  location: Queens, NY
+  tags: [film, performance]
+  image: /assets/img/placeholders/placeholder-artist.svg
+  short_bio: "Develops staged training films and embodied lecture-performances."
+  links:
+    site: "#"
+- name: Tomas Vire
+  slug: tomas-vire
+  location: Chicago, IL
+  tags: [print, sculpture]
+  image: /assets/img/placeholders/placeholder-artist.svg
+  short_bio: "Printmaker focused on procedural diagrams and sculptural binders."
+  links:
+    site: "#"

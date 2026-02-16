@@ -1,0 +1,12 @@
+<div class="index-table {{ include.variant }}">
+  <div class="index-row header">
+    {% for heading in include.headings %}<span>{{ heading }}</span>{% endfor %}
+  </div>
+  {% for row in include.rows %}
+    <div class="index-row" {% if row.tags %}data-tags="{{ row.tags | join: ' ' | downcase }}"{% endif %}>
+      <span>{% if include.variant == 'artists' %}<a href="{{ '/artists/' | append: row.slug | append: '/' | relative_url }}">{{ row.name }}</a>{% else %}{{ row.title | default: row.role }}{% endif %}</span>
+      <span>{{ row.location | default: row.date | default: row.committee }}</span>
+      <span>{{ row.tags | join: ', ' | default: row.type | default: row.time_level }}</span>
+    </div>
+  {% endfor %}
+</div>

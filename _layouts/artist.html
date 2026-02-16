@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.name }} · {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+</head>
+<body>
+{% capture framed %}
+  {% include header.html %}
+  <main class="shell">
+    <aside class="left-col">{% include directory.html %}</aside>
+    <section class="center-col">
+      {% capture a_body %}
+        <img class="artist-image" src="{{ page.image | relative_url }}" alt="{{ page.name }} portrait placeholder">
+        <p><strong>Location:</strong> {{ page.location }}</p>
+        <p><strong>Tags:</strong> {{ page.tags | join: ', ' }}</p>
+        {{ content }}
+        <div class="video-wrap"><iframe src="{{ page.featured_video }}" title="Featured clip for {{ page.name }}" loading="lazy" allowfullscreen></iframe></div>
+      {% endcapture %}
+      {% include module.html title=page.name body=a_body class="artist-profile" %}
+    </section>
+    <aside class="right-col">
+      {% capture l_body %}
+      <ul class="mini-list">
+        {% for link in page.links %}
+          <li><a href="{{ link[1] }}">{{ link[0] | capitalize }}</a></li>
+        {% endfor %}
+      </ul>
+      <p><a href="{{ '/contact/' | relative_url }}">Booking & Contact</a></p>
+      {% endcapture %}
+      {% include module.html title="Artist Desk" body=l_body %}
+      {% include training_tape.html %}
+    </aside>
+  </main>
+  {% include footer.html %}
+{% endcapture %}
+{% include frame.html content=framed %}
+<script src="{{ '/assets/js/site.js' | relative_url }}"></script>
+</body>
+</html>
