@@ -1,11 +1,8 @@
 {% capture b_body %}
 <ul class="bulletin-list">
-  {% for bulletin in site.data.bulletins %}
-    <li>
-      <strong>{{ bulletin.title }}</strong>
-      <p>{{ bulletin.note }}</p>
-    </li>
+  {% for bulletin in site.data.bulletins limit:2 %}
+    <li><strong>{{ bulletin.title }}</strong><p>{{ bulletin.note }}</p></li>
   {% endfor %}
 </ul>
 {% endcapture %}
-{% include module.html title="Bulletins" body=b_body %}
+{% include module.html title="Bulletins" body=b_body variant="core" %}

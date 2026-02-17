@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 120" fill="none">
+  <rect x="8" y="12" width="194" height="92" rx="5" stroke="#9a003f" stroke-width="6"/>
+  <path d="M20 26h170M20 92h170" stroke="#9a003f" stroke-opacity="0.35" stroke-width="2"/>
+  <text x="38" y="73" font-size="38" font-family="Georgia,Times New Roman,serif" fill="#9a003f" transform="rotate(-5 104 60)">URGENT</text>
+</svg>

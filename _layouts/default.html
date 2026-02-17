@@ -11,11 +11,15 @@
   {% capture framed %}
     {% include header.html %}
     <main class="shell">
-      <aside class="left-col">{% include directory.html %}</aside>
+      <aside class="left-col">
+        {% include directory.html %}
+        {% include rail_left.html %}
+      </aside>
       <section class="center-col">{{ content }}</section>
       <aside class="right-col">
+        {% include rail_right.html %}
         {% include bulletins.html %}
-        {% include kpis.html %}
+        {% include flavor_module.html class='flavor-rail' %}
         {% include training_tape.html %}
       </aside>
     </main>

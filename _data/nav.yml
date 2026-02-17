@@ -33,12 +33,3 @@ left_directory:
     url: /events/
   - title: Donor Relations
     url: /donate/
-committee_shortcuts:
-  - title: Legislative
-    anchor: "#committee-legislative"
-  - title: Creative
-    anchor: "#committee-creative"
-  - title: Release
-    anchor: "#committee-release"
-  - title: Outreach & Growth
-    anchor: "#committee-outreach"
