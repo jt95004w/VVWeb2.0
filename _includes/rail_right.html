@@ -1,0 +1,12 @@
+{% assign ticker_count = site.data.ticker | size %}
+{% assign ticker_index = 'now' | date: '%j' | plus: 0 | plus: 2 | modulo: ticker_count %}
+{% assign ticker_line = site.data.ticker[ticker_index] %}
+<div class="rail-collage rail-right">
+  <img class="rail-art parallax-rail" data-speed="0.04" src="{{ '/assets/overlays/rail-collage-right.svg' | relative_url }}" alt="Decorative collage">
+  <img class="rail-stamp s1 parallax-rail" data-speed="0.07" src="{{ '/assets/overlays/stamp-redacted.svg' | relative_url }}" alt="Redacted stamp">
+  <img class="rail-stamp s2 parallax-rail" data-speed="0.09" src="{{ '/assets/overlays/stamp-approved.svg' | relative_url }}" alt="Approved stamp">
+</div>
+{% capture ticker_body %}
+<p>{{ ticker_line }}</p>
+{% endcapture %}
+{% include module.html title="Ticker" body=ticker_body class="ticker-module" variant="flavor" %}

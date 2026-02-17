@@ -1,0 +1,7 @@
+{% assign module_variant = include.variant | default: 'core' %}
+<div class="module module--{{ module_variant }}{% if include.class %} {{ include.class }}{% endif %}">
+  <div class="module-title">{% if include.icon %}<span>{{ include.icon }}</span> {% endif %}{{ include.title }}</div>
+  <div class="module-body">
+    {{ include.body }}
+  </div>
+</div>

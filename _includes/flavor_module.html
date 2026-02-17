@@ -1,0 +1,13 @@
+{% assign flavor_count = site.data.flavor | size %}
+{% if flavor_count > 0 %}
+  {% assign day_index = 'now' | date: '%j' | plus: 0 | modulo: flavor_count %}
+  {% assign flavor = site.data.flavor[day_index] %}
+  {% capture f_body %}
+    <p>{{ flavor.body }}</p>
+    {% if flavor.artifact %}
+      <img class="flavor-artifact" src="{{ flavor.artifact | relative_url }}" alt="Flavor artifact">
+    {% endif %}
+    <p class="flavor-stamp"><img src="{{ '/assets/overlays/stamp-' | append: flavor.stamp | append: '.svg' | relative_url }}" alt="{{ flavor.stamp }} stamp"></p>
+  {% endcapture %}
+  {% include module.html title=flavor.title body=f_body variant="flavor" class=include.class %}
+{% endif %}
