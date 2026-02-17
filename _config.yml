@@ -2,7 +2,7 @@ title: Vivid Vision Collective
 email: contact@vividvisioncollective.example
 description: >-
   Corporate portal for Vivid Vision Collective — an arts organization with procedural flair.
-baseurl: ""
+baseurl: "/VVWeb2.0"
 url: ""
 markdown: kramdown
 theme: null
